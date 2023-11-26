@@ -117,28 +117,50 @@ Ans: This will try to execute block of code and if exception raises then control
 
 Q24. What are the two most popular try statement variations?
 Ans: Try-except
-     Try-except-finally
+     Try-finally
 
 Q25. What is the purpose of the raise statement?
 Ans: Raise used to raise an exception by the user/developer.
 
 Q26. What does the assert statement do, and what other statement is it like?
+Ans: Evaluates an expression and raises an AssertionError if the expression is false
 
 Q27. What is the purpose of the with/as argument, and what other statement is it like?
+Ans:  It's particularly useful when working with resources that need to be explicitly opened and closed, like files etc. It's like try/finally block
 
 Q28. What are *args, **kwargs?
+Ans: The *args parameter in a function definition allows you to pass a variable number of positional arguments. It collects these arguments into a tuple within the function.
+The **kwargs parameter in a function definition allows you to pass a variable number of keyword arguments. It collects these arguments into a dictionary within the function.
 
 Q29. How can I pass optional or keyword parameters from one function to another?
+Ans: We can use *args and **kwargs within the function calls. 
 
 Q30. What are Lambda Functions?
+Ans: Simailar to method/function. its like a single line method.
 
 Q31. Explain Inheritance in Python with an example?
+Ans: Feature that allows a child class to inherit properties and behaviors from an parent class.
+    class Animal:
+        def __init__(self, species, sound):
+            self.species = species
+            self.sound = sound
+        def make_sound(self):
+            print(f"The {self.species} makes a {self.sound} sound.")
+    class Dog(Animal):
+        def __init__(self, name):
+            super().__init__("Dog", "bark")
+            self.name = name
+        def wag_tail(self):
+            print(f"{self.name} is wagging its tail.")
 
-Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of 
-class C, which version gets invoked?
+Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
+Ans: It picks func() from left most class with in bracket i.e., A
 
 Q33. Which methods/functions do we use to determine the type of instance and inheritance?
-
+Ans: type of instance: isinstance()
+     inheritence: issubclass()
 Q34.Explain the use of the 'nonlocal' keyword in Python.
+Ans: The nonlocal keyword only applies to variables in enclosing scopes, not global variables. If a variable is not found in the local or enclosing scopes, Python will look for it in the global scope.
 
 Q35. What is the global keyword?
+Ans: The global keyword is used to declare that a variable inside a function refers to the global scope's variable rather than creating a new local variable with the same name
