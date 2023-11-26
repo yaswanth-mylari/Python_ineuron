@@ -85,26 +85,42 @@ Q15. When do you consider allowing operator overloading of your classes?
 Ans: Operator overloading in Python can be useful when you want your custom objects to mimic the behavior of built-in types
 
 Q16. What is the most popular form of operator overloading?
-Ans: 
+Ans:  Most common form of operator overloading typically involves arithmetic operators like +, -, *, /, and comparison operators like ==, !=, <, >, etc. Overloading these operators allows programmers to define custom behaviors for objects of user-defined classes.
+
 Q17. What are the two most important concepts to grasp in order to comprehend Python OOP code?
+Ans: Classes and Objects
 
 Q18. Describe three applications for exception processing.
+Ans: File not found Exception
+     Divisible by  zero exception
+     Index out of bound exception
 
 Q19. What happens if you don't do something extra to treat an exception?
+Ans: Program will halt when exception raises
 
 Q20. What are your options for recovering from an exception in your script?
+Ans: Handling them with try-except block
 
 Q21. Describe two methods for triggering exceptions in your script.
+Ans: def method1():
+        l=[1,2]
+        print(l[3])
+     def method2():
+        x=3/0
 
 Q22. Identify two methods for specifying actions to be executed at termination time, regardless of  
 whether or not an exception exists.
+Ans: Use finally block.
 
 Q23. What is the purpose of the try statement?
+Ans: This will try to execute block of code and if exception raises then control is transferred to except block.
 
 Q24. What are the two most popular try statement variations?
+Ans: Try-except
+     Try-except-finally
 
 Q25. What is the purpose of the raise statement?
-
+Ans: Raise used to raise an exception by the user/developer.
 Q26. What does the assert statement do, and what other statement is it like?
 
 Q27. What is the purpose of the with/as argument, and what other statement is it like?
