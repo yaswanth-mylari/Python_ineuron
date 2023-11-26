@@ -121,6 +121,7 @@ Ans: Try-except
 
 Q25. What is the purpose of the raise statement?
 Ans: Raise used to raise an exception by the user/developer.
+
 Q26. What does the assert statement do, and what other statement is it like?
 
 Q27. What is the purpose of the with/as argument, and what other statement is it like?
